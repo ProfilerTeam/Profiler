@@ -1,0 +1,139 @@
+2015/03/09 15:50:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/09 15:50:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/09 15:50:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/09 15:50:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/09 15:51:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/03/09 15:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "installer/index/go".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('installer/index...')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/installer/index/go
+HTTP_REFERER=http://qwertyuiop198.profiler.com/installer/index/go
+---
+2015/03/09 15:51:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "installer/config/index".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('installer/confi...')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/installer/config/index
+HTTP_REFERER=http://qwertyuiop198.profiler.com/installer/config/index
+---
+2015/03/09 15:51:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "installer/config/basic".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('installer/confi...')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/installer/config/basic
+HTTP_REFERER=http://qwertyuiop198.profiler.com/installer/config/basic
+---
+2015/03/09 15:51:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "robots.txt".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('robots.txt')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/robots.txt
+HTTP_REFERER=http://qwertyuiop198.profiler.com/robots.txt
+---
+2015/03/09 15:51:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "installer/config/finished".' in /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php:286
+Stack trace:
+#0 /srv/www/profiler/protected/vendors/yii/web/CWebApplication.php(141): CWebApplication->runController('installer/confi...')
+#1 /srv/www/profiler/protected/vendors/yii/base/CApplication.php(180): CWebApplication->processRequest()
+#2 /srv/www/htdocs/qwertyuiop198/index.php(49): CApplication->run()
+#3 {main}
+REQUEST_URI=/installer/config/finished
+HTTP_REFERER=http://qwertyuiop198.profiler.com/installer/config/finished
+---
