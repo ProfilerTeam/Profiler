@@ -4,7 +4,7 @@ services: mysql
 
 before_script:
   - mysql -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
-  - mysql -u root -p profiler_test < import.sql
+  - mysql -u root -p profiler_test --password= < import.sql
   - cd protected/tests
   
 php:
