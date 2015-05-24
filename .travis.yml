@@ -1,0 +1,13 @@
+language: php
+
+services: mysql
+
+before_script:
+  - mysql -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
+  - mysql -u travis -p profiler_test < import.sql
+  - cd protected/tests
+  
+php:
+    - 5.4
+    - 5.5
+    - 5.6
