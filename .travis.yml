@@ -3,7 +3,8 @@ language: php
 services: mysql
 
 before_script:
-  - mysql --user=root --password= -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
+  - mysql --user=root --password=
+  - mysql -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - cd protected/tests
   
 php:
