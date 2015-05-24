@@ -8,7 +8,6 @@ before_script:
   - pecl install pdo
   - pecl install pdo_mysql
   - mysql --user=root --password= -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
-  - cd protected/tests
   
 php:
     - 5.4
