@@ -2,7 +2,10 @@ language: php
 
 services: mysql
 
+sudo: required
+
 before_script:
+  - ./configure --with-pdo-mysql --with-mysql-sock=/var/mysql/mysql.sock
   - mysql --user=root --password= -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - cd protected/tests
   
