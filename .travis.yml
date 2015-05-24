@@ -5,9 +5,9 @@ services: mysql
 sudo: required
 
 before_script:
-  - apt-get install php-pear php5-dev libmysqlclient15-dev
-  - pecl install pdo
-  - pecl install pdo_mysql
+  - sudo apt-get install php-pear php5-dev libmysqlclient15-dev
+  - sudo pecl install pdo
+  - sudo pecl install pdo_mysql
   - mysql --user=root --password= -e 'CREATE DATABASE `profiler_test` CHARACTER SET utf8 COLLATE utf8_general_ci;'
   - cd protected/tests
   
