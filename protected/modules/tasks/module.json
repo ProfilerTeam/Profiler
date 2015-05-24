@@ -1,0 +1,10 @@
+{
+    "id": "tasks",
+    "name": "Tasks",
+    "description": "Tasks for groups",
+    "keywords": ["tasks"],
+    "version": "1.0",
+    "profiler": {
+        "minVersion": "0.11"
+    }
+}

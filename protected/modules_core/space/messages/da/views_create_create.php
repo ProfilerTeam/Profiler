@@ -1,0 +1,22 @@
+<?php
+return array (
+  '<strong>Create</strong> new group' => '<strong>Kræer<strong> ny gruppe',
+  'Advanced access settings' => '',
+  'Also non-members can see this<br>group, but have no access' => '',
+  'Create' => 'Lav',
+  'Every user can enter your group<br>without your approval' => '',
+  'For everyone' => '',
+  'How you want to name your group?' => '',
+  'Invite and request' => '',
+  'Join Policy' => '',
+  'Only by invite' => '',
+  'Please write down a small description for other users.' => '',
+  'Private (Invisible)' => '',
+  'Public (Visible)' => '',
+  'This group will be hidden<br>for all non-members' => '',
+  'Users can also apply for a<br>membership to this group' => '',
+  'Users can be only added<br>by invitation' => '',
+  'Visibility' => '',
+  'group description' => 'Gruppe beskrivelse',
+  'group name' => 'Gruppe navn',
+);

@@ -1,0 +1,10 @@
+{
+    "id": "mail",
+    "name": "Mail",
+    "description": "User messaging system",
+    "keywords": ["mail"],
+    "version": "1.0",
+    "profiler": {
+        "minVersion": "0.11"
+    }
+}

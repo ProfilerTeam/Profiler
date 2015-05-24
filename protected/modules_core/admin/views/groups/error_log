@@ -1,0 +1,1 @@
+[23-Apr-2015 19:04:22 UTC] PHP Fatal error:  Class 'Yii' not found in /home/profiler/public_html/protected/modules_core/admin/views/groups/index.php on line 2

@@ -1,0 +1,35 @@
+.task {
+    border: 1px solid #dadada;
+    padding: 7px 10px 5px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.task .fa {
+    font-size: 24px;
+    font-weight: normal;
+    color: #dadada;
+    width: 24px;
+}
+
+.task .task-title {
+    margin: 2px 7px 0 7px;
+}
+
+.task-completed {
+    color: #bebebe;
+    text-decoration: line-through;
+}
+
+.task a {
+    color: #3b4854 !important;
+}
+
+.task .label {
+    margin-left: 7px;
+}
+
+.panel-mytasks {
+    display: block !important;
+}
