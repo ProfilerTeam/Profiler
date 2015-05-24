@@ -3,9 +3,9 @@
   array (
     'db' => 
     array (
-      'connectionString' => 'mysql:host=YOUR_SQL_HOSTNAME;dbname=YOUR_SQL_DATABASE',
-      'username' => 'YOUR_SQL_USERNAME',
-      'password' => 'YOUR_SQL_PASSWORD',
+      'connectionString' => 'mysql:host=localhost;dbname=profiler_test',
+      'username' => 'root',
+      'password' => '',
     ),
     'cache' => 
     array (
