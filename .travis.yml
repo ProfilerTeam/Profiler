@@ -13,5 +13,4 @@ script: php ./protected/tests/build.php
   
 php:
     - 5.4
-    - 5.5
     - 5.6
