@@ -17,9 +17,9 @@
  * NOTE, this file must be saved in UTF-8 encoding.
  */
 return array (
-  '<strong>Users</strong> who like this' => '',
-  'Access denied!' => '',
-  'Could not find target class!' => '',
-  'Could not find target record!' => '',
-  'Invalid class given!' => '',
+  '<strong>Users</strong> who like this' => '<strong>Användare</strong> som gillar den här',
+  'Access denied!' => 'Nekat tillträde',
+  'Could not find target class!' => 'Kunde inte hitta målklass!',
+  'Could not find target record!' => 'Kunde inte hitta mål rekord!',
+  'Invalid class given!' => 'Ogiltig klass given!',
 );
