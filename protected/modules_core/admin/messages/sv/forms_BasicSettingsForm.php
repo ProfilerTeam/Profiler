@@ -1,6 +1,6 @@
 <?php
 return array (
-  'Base URL' => '',
+  'Base URL' => 'Bas URL',
   'Default language' => 'Standard språk',
   'Default space' => 'Standard nätverk',
   'Invalid space' => 'Ogiltigt nätverk',
