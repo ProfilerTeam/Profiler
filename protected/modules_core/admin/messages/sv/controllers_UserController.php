@@ -4,7 +4,7 @@ return array (
   'Delete' => 'Ta bort',
   'Disabled' => 'Avaktiverad',
   'Enabled' => 'Aktiverad',
-  'LDAP' => '',
+  'LDAP' => 'LDAP',
   'Local' => 'Lokal',
   'Save' => 'Spara',
   'Unapproved' => 'Icke godkänd',
