@@ -8,5 +8,5 @@ return array (
   'No theme' => 'Inget tema.',
   'None - shows dropdown in user registration.' => 'Ingen - visa lista vid registering.',
   'Saved' => 'Sparad',
-  'Saved and flushed cache' => 'Sparade  och cache rensat.',
+  'Saved and flushed cache' => 'Sparade och cache rensat.',
 );
