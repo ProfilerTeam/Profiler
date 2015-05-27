@@ -31,3 +31,12 @@ Fork the repository and clone that repo and make any changes you wish to make, t
 > - Make sure to set your database credentials in the **/protected/config/local/_settings.php** file!
 > - Make sure you have read the requirements list above and installed all required modules/extensions.
 
+Translation
+===============================================
+Profiler is easy to translate as it uses the Yii Framework, meaning all features are modular and easy to change. Translations are used by using `Yii::t('ExampleModule.category', 'Message');` and then modify the **protected/modules_core/exampleModule/messages/[language]** files like this:
+![Swedish Translation Example](http://i.imgur.com/nb1pbeX.png)
+
+Then you can create a pull request and your translation will be added into the main Profiler repository!
+
+
+
