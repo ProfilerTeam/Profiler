@@ -33,5 +33,5 @@ return array (
   'User not found!' => 'Bruger ikke fundet!',
   'Welcome to %appName%' => 'Velkommen til %appName%',
   'You cannot create public visible content!' => '',
-  'Your daily summary' => 'Dit daglige resumé',
+  'Your daily summary' => 'Din daglige resumé',
 );
