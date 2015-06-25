@@ -39,4 +39,5 @@ Profiler is easy to translate as it uses the Yii Framework, meaning all features
 Then you can create a pull request and your translation will be added into the main Profiler repository!
 
 
-
+- Developers -
+Zak, and Member1221
