@@ -9,7 +9,7 @@ The **Profiler** project is an open-source social networking project built in PH
 Development
 -------------
 
-Profiler is built in PHP and therefore requires a certain development environment to work properly, you can use any server or LAMP/WAMP stack to test Profiler.
+Profiler is built in PHP and therefore requires a certain development environment to work properly, you can use any server or LAMP/WAMP/XAMPP(Recommended!) stack to test Profiler.
 
 The following requirements need to be met:
 
