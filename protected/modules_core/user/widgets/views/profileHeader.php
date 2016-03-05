@@ -77,7 +77,7 @@ if (window.addEventListener) {
             <?php } ?>
 
             <div class="img-profile-data">
-                <h1><?php echo CHtml::encode($user->displayName); if($user->profile->verified === "1"){echo ' <img width="30px" height="30px" src="http://Profiler.cf/img/verified.png">';}?>&nbsp <?php if($user->profile->developer === "1"){echo ' <img width="30px" height="30px" src="http://Profiler.cf/img/developer.png">';}?></h1>
+                <h1><?php echo CHtml::encode($user->displayName); if($user->profile->verified === "1"){echo ' <img width="30px" height="30px" src="/img/verified.png">';}?>&nbsp <?php if($user->profile->developer === "1"){echo ' <img width="30px" height="30px" src="/img/developer.png">';}?></h1>
                 <h2 style="color: #FFFFFF;"><?php echo CHtml::encode($user->profile->title); ?></h2>
             </div>
 
@@ -239,7 +239,7 @@ if (window.addEventListener) {
                     tag = document.createElement('audio');
                     tag.setAttribute("preload","auto")
                     tag.setAttribute("autoplay","autoplay")
-                    tag.setAttribute("src","http://Profiler.cf/sounds/inception.mp3")
+                    tag.setAttribute("src","/sounds/inception.mp3")
                     tag.setAttribute("id","audio"+id)
                     zone.appendChild(tag)
                     tag.play()

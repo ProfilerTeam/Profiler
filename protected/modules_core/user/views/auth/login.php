@@ -7,7 +7,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
 
 <div class="container" style="text-align: center;">
     <center>
-        <div class="loginLogo" id="loginLogo"><img src="http://Profiler.cf/newLoginLogo.png" class="animated"></img></div>
+        <div class="loginLogo" id="loginLogo"><img src="/gassets/LOGIN_LOGO.png" class="animated"></img></div>
     </center>
 </div>
     <script>
@@ -32,11 +32,11 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
             <form class="form-signin">
                 <span id="reauth-email" class="reauth-email"></span>
                 <div class="form-group">
-                <?php echo $form->textField($model, 'username', array('class' => 'form-control', 'id' => 'login_username', 'placeholder' => Yii::t('UserModule.views_auth_login', 'username or email'))); ?>
+                <?php echo $form->textField($model, 'username', array('class' => 'form-control', 'id' => 'login_username', 'placeholder' => Yii::t('UserModule.views_auth_login', 'Username or Email'))); ?>
                 <?php echo $form->error($model, 'username'); ?>
                 </div>
                 <div class="form-group">
-                <?php echo $form->passwordField($model, 'password', array('class' => 'form-control', 'id' => 'login_password', 'placeholder' => Yii::t('UserModule.views_auth_login', 'password'))); ?>
+                <?php echo $form->passwordField($model, 'password', array('class' => 'form-control', 'id' => 'login_password', 'placeholder' => Yii::t('UserModule.views_auth_login', 'Password'))); ?>
                 <?php echo $form->error($model, 'password'); ?>
                 </div>
                 <div id="remember" class="checkbox">
@@ -44,6 +44,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
                 </div>
                 <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Sign in</button>
             </form><!-- /form -->
+            <button class="btn btn-lg btn-primary btn-block btn-register" type="submit">Register</button>
             <a href="#" class="forgot-password">
                 <a href="<?php echo $this->createUrl('//user/auth/recoverPassword'); ?>"><br><?php echo Yii::t('UserModule.views_auth_login', 'Forgot Password') ?></a>
             </a>
@@ -156,7 +157,8 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
 </script>
 <style>
 body {
-    background: url(http://Profiler.cf/loginBackground.jpg) no-repeat;
+    background: url(/gassets/LOGIN_BG.jpg) no-repeat;
+    background-size: auto;
 }
 </style>
 

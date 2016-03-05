@@ -24,9 +24,9 @@
       'dryRun' => false,
       'transportOptions' => 
       array (
-        'host' => 'YOUR_MAIL_HOST',
-        'username' => 'YOUR_MAIL_USERNAME',
-        'password' => 'YOUR_MAIL_PASSWORD',
+        'host' => 'host323.qnop.net',
+        'username' => 'accounts@profiler.cf',
+        'password' => 'fassdfg',
         'encryption' => 'ssl',
         'port' => '465',
         'options' => 
@@ -54,5 +54,5 @@
   ),
   'name' => 'Profiler',
   'language' => 'en_gb',
-  'theme' => 'Sandstone',
+  'theme' => 'Default',
 ); ?>

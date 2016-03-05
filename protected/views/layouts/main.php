@@ -105,7 +105,7 @@
             <div class="topbar-brand">
                 <a class="navbar-brand hidden-xs"
                 
-                   href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="http://Profiler.cf/logo.png"></a>
+                   href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/gassets/PAGE_LOGO2.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">
@@ -303,7 +303,7 @@
 
 </script>
 <div class="footer">
-<div class="text text-center animated fadeIn black">�?<strong>© 2015 Profiler - All Rights Reserved</strong><br><div class="footerlinks"><a href="http://Profiler.cf/team"><strong>Team</strong></a> - <a href="http://Profiler.cf/changelog"><strong>Changelog</strong></a></div></div>
+<div class="text text-center animated fadeIn black">Â?<strong>Â© 2015 Profiler - All Rights Reserved</strong><br><div class="footerlinks"><a href="http://Profiler.cf/team"><strong>Team</strong></a> - <a href="http://Profiler.cf/changelog"><strong>Changelog</strong></a></div></div>
 </div>
 <h5 style="text-align: center;">
 <?php

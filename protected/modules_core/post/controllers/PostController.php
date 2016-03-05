@@ -55,6 +55,7 @@ class PostController extends Controller
             }
 
             $this->renderJson(array('wallEntryId' => $post->content->getFirstWallEntryId()));
+            echo "posted" . $post->content->getFirstWallEntryId();
         } else {
             $this->renderJson(array('errors' => $post->getErrors()), false);
         }
