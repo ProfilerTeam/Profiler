@@ -5,7 +5,7 @@
     array (
       'connectionString' => 'mysql:host=localhost;dbname=profiler_test',
       'username' => 'root',
-      'password' => '',
+      'password' => 'profilerpass',
     ),
     'cache' => 
     array (
