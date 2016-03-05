@@ -1,0 +1,3 @@
+@echo off
+echo Making assets folder...
+mkdir assets
