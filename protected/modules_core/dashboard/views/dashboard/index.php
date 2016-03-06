@@ -1,19 +1,15 @@
 <div class="container">
     <div class="alert alert-success">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
-        <strong>Status:</strong> Profiler is currently in BETA status (Version <?php echo Yii::app()->params['version']; ?>)
+        <strong>Status:</strong> Profiler is currently being revamped! (Version <?php echo Yii::app()->params['version']; ?>)
     </div>
     <script>console.log("Welcome alert displayed");</script>
     <div class="row">
         <div class="col-md-8">
             <div class="panel panel-default">
                 <div class="panel-heading"><?php echo Yii::t('DashboardModule.views_dashboard_index', 'Your Feed'); ?></div>
-            <?php
-            $this->widget('application.modules_core.post.widgets.PostFormWidget', array(
-                'contentContainer' => Yii::app()->user->model
-            ));
-            ?>
-            <br>
+            <?php $this->widget('application.modules_core.post.widgets.PostFormWidget', array('contentContainer' => Yii::app()->user->model)); ?>
+            <hr>
             <?php
             $this->widget('application.modules_core.wall.widgets.WallStreamWidget', array(
                 'type' => Wall::TYPE_DASHBOARD

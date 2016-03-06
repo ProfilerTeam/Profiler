@@ -52,7 +52,7 @@ class Zend_Tool_Project_Provider_Project
         } else {
             $path = trim($path);
             if (!file_exists($path)) {
-                $created = mkdir($path);
+                $created = mkdir($path, 0777, true);
                 if (!$created) {
                     // require_once 'Zend/Tool/Framework/Client/Exception.php';
                     throw new Zend_Tool_Framework_Client_Exception('Could not create requested project directory \'' . $path . '\'');

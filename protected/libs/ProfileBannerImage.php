@@ -53,7 +53,7 @@ class ProfileBannerImage
     /**
      * @var String folder name inside the uploads directory
      */
-    protected $folder_images = "profile_image/banner";
+    protected $folder_images = "profiles";
 
     /**
      * @var String name of the default image
@@ -93,7 +93,7 @@ class ProfileBannerImage
         }
 
 		if (file_exists($this->getPath($prefix))) {
-			$path .= '/uploads/' . $this->folder_images . '/';
+			$path .= '/uploads/' . $this->folder_images . '/' . Yii::app()->user->model->username . '/banners/';
 			$path .= $this->guid . $prefix;
 			$path .= '.jpg';
 		} elseif (Yii::app()->theme && Yii::app()->theme != "") {
@@ -126,10 +126,10 @@ class ProfileBannerImage
      */
     public function getPath($prefix = "")
     {
-        $path = Yii::getPathOfAlias('webroot') . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $this->folder_images . DIRECTORY_SEPARATOR;
+        $path = Yii::getPathOfAlias('webroot') . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $this->folder_images . DIRECTORY_SEPARATOR . Yii::app()->user->model->username . DIRECTORY_SEPARATOR . "banners" . DIRECTORY_SEPARATOR;
 
         if (!is_dir($path))
-            mkdir($path);
+            mkdir($path, 0777, true);
 
         $path .= $this->guid;
         $path .= $prefix;
@@ -185,6 +185,15 @@ class ProfileBannerImage
         @unlink($this->getPath('_org'));
     }
 
+    function debug_to_console( $data ) {
+
+    if ( is_array( $data ) )
+        $output = "<script>console.log( 'Debug Objects: " . implode( ',', $data) . "' );</script>";
+    else
+        $output = "<script>console.log( 'Debug Objects: " . $data . "' );</script>";
+
+    echo $output;
+    }
 }
 
 ?>

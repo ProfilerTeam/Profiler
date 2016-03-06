@@ -20,7 +20,7 @@ return array (
   '<b>Nobody wrote something yet.</b><br>Make the beginning and post something...' => '<b>Ingen har skrevet noget endu.</b><br>Lav begyndelsen, og lav et indlæg...',
   '<b>This profile stream is still empty</b>' => '<b>Denne profils tidslinje er stadig tom</b>',
   '<b>This space is still empty!</b><br>Start by posting something here...' => '<b>Denne gruppe er stadig tom!</b><br>Start med at lave et indlæg...',
-  '<b>Your dashboard is empty!</b><br>Post something on your profile or join some spaces!' => '<b>Din forside er tom!</b><br>Lav et indlæg på din profil, eller tildmæld dig til nogle grupper!',
+  '<b>Your dashboard is empty!</b><br>Post something on your profile or join some groups!' => '<center><b>Din forside er tom!</b><br>Lav et indlæg på din profil, eller tildmæld dig til nogle grupper!</center>',
   '<b>Your profile stream is still empty</b><br>Get started and post something...' => '<b>Din profils tidslinje er stadig tom</b><br>Start ud med at lave et indlæg...',
   'Back to stream' => 'Tilbage til forside',
   'Content with attached files' => 'Indhold med vedhæftet filer',

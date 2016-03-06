@@ -180,13 +180,14 @@ class File extends HActiveRecord
      */
     public function getPath()
     {
-        $path = Yii::getPathOfAlias('webroot') .
+        $path = 
                 DIRECTORY_SEPARATOR . "uploads" .
                 DIRECTORY_SEPARATOR . $this->folder_uploads .
                 DIRECTORY_SEPARATOR . $this->guid;
+        //Yii::log("DIR: " . $path, "error", "file.upload.ui");
 
-        if (!is_dir($path)) {
-            mkdir($path);
+        if (!file_exists($path)) {
+            mkdir($path, 0777, true);
         }
 
         return $path;

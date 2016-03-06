@@ -27,7 +27,7 @@ if (window.addEventListener) {
         
         if (keys.toString().indexOf(kombat) >= 0) {
             alert("FFS IT BROKE");
-            window.location = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+            window.location = 'https://www.youtube.com/watch?v=egne2ZCMM_0';
             keys = [];
         };
     }, true);

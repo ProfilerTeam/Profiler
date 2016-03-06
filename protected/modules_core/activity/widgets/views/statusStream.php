@@ -5,11 +5,11 @@
                 <center>
                                 <br>
                                 <br>
-                                <img src="http://Profiler.cf/loginLogo.png">
+                                <img src="/gassets/PAGE_LOGO.png">
                                 <br>
                                 <span class="label label-success"><strong><?php echo Yii::app()->params['versionFlag']; ?> (Version <?php echo Yii::app()->params['version']; ?>)</strong></span>
                                 <br>
-                                <h4 style="text-align: center; color: #262626; padding-left: 40px; padding-right: 40px;">Profiler is going good, so far we're fixing all the bugs we come across quickly and efficiently. We'll keep you posted on the status (if any bad things happen) in this panel here.</h4>
+                                <h4 style="text-align: center; color: #262626; padding-left: 40px; padding-right: 40px;">Profiler is under a heavy revamp to remove old and new bugs. We are also working on improving the overall experience. There's quite a long way to go from here.</h4>
                                 <br>
                                 <br>
                                 <br>

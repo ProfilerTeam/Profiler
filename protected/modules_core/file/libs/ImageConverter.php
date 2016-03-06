@@ -49,6 +49,31 @@ class ImageConverter
 
         return true;
     }
+    
+    public static function TransformToPNG($sourceFile, $targetFile)
+    {
+        if (HSetting::Get('imageMagickPath', 'file')) {
+            $convertCommand = HSetting::Get('imageMagickPath', 'file');
+            $command = $convertCommand . " \"{$sourceFile}\" \"{$targetFile}\"";
+            $ret = passthru($command);
+        } else {
+            $gdImage = self::getGDImageByFile($sourceFile);
+            list($gdW, $gdH) = getimagesize($sourceFile);
+            $transindex = imagecolortransparent($gdImage);
+            $targetImage = imagecreatetruecolor( $gdW, $gdH ); 
+            imagealphablending($targetImage, false);
+            imagesavealpha($targetImage, true);
+            imagecopyresampled( $targetImage, $gdImage, 
+                    0, 0, 
+                    0, 0, 
+                    $gdW, $gdH, 
+                    imagesx($gdImage), imagesy($gdImage) );
+            imagepng($gdImage, $targetFile, 1, PNG_ALL_FILTERS);
+            imagedestroy($gdImage);
+        }
+
+        return true;
+    }
 
     /**
      * Resizes an given Image to an given Size 

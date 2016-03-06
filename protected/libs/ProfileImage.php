@@ -53,12 +53,21 @@ class ProfileImage
     /**
      * @var String folder name inside the uploads directory
      */
-    protected $folder_images = "profile_image";
+    protected $folder_images = "profiles";
 
     /**
      * @var String name of the default image
      */
     protected $defaultImage;
+    
+    public function getUsername($IDuser=NULL)
+    {
+        if($IDuser!=NULL)
+            $username=User::findOne($IDuser);
+        else
+            $username=User::findOne(Yii::$app->user->getId());
+        return $username->username;
+    }
 
     /**
      * Constructor of Profile Image
@@ -94,14 +103,14 @@ class ProfileImage
 
 
         if (file_exists($this->getPath($prefix))) {
-            $path .= '/uploads/' . $this->folder_images . '/';
+            $path .= '/uploads/' . $this->folder_images . '/' . Yii::app()->user->model->username . '/avatars/';
             $path .= $this->guid . $prefix;
-	        $path .= '.jpg';
+	        $path .= '.png';
         } elseif (is_object(Yii::app()->theme)) {
 	        // get default image from theme (if exists)
 	        $path = Yii::app()->theme->getFileUrl('/img/' . $this->defaultImage . '.jpg', true);
         } else {
-	        $path .= '/img/' . $this->defaultImage;
+	        $path .= '/img/' . $this->defaultImage . Yii::app()->user->model->username . '/avatars';
 	        $path .= '.jpg';
         }
 
@@ -127,14 +136,16 @@ class ProfileImage
      */
     public function getPath($prefix = "")
     {
-        $path = Yii::getPathOfAlias('webroot') . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $this->folder_images . DIRECTORY_SEPARATOR;
+        //$userdir = Yii::$app->user->identity->username;
+        
+        $path = Yii::getPathOfAlias('webroot') . DIRECTORY_SEPARATOR . "uploads" . DIRECTORY_SEPARATOR . $this->folder_images . DIRECTORY_SEPARATOR . Yii::app()->user->model->username . DIRECTORY_SEPARATOR . "avatars" . DIRECTORY_SEPARATOR;
 
-        if (!is_dir($path))
-            mkdir($path);
+        if (!file_exists($path))
+            mkdir($path, 0777, true);
 
         $path .= $this->guid;
         $path .= $prefix;
-        $path .= ".jpg";
+        $path .= ".png";
 
         return $path;
     }
@@ -151,7 +162,7 @@ class ProfileImage
     public function cropOriginal($x, $y, $h, $w)
     {
 
-        $image = imagecreatefromjpeg($this->getPath('_org'));
+        $image = imagecreatefrompng($this->getPath('_org'));
 
         // Create new destination Image
         $destImage = imagecreatetruecolor($this->width, $this->height);
@@ -161,7 +172,7 @@ class ProfileImage
         }
 
         unlink($this->getPath(''));
-        imagejpeg($destImage, $this->getPath(''), 100);
+        imagepng($destImage, $this->getPath(''), 100);
     }
 
     /**
@@ -177,7 +188,7 @@ class ProfileImage
         }
 
         $this->delete();
-        ImageConverter::TransformToJpeg($file, $this->getPath('_org'));
+        ImageConverter::TransformToPNG($file, $this->getPath('_org'));
         ImageConverter::Resize($this->getPath('_org'), $this->getPath('_org'), array('width' => 400, 'mode' => 'max'));
         ImageConverter::Resize($this->getPath('_org'), $this->getPath(''), array('width' => $this->width, 'height' => $this->height));
     }
