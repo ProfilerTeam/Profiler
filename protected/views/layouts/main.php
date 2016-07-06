@@ -1,6 +1,6 @@
-<?php /* @var $this Controller */ ?>
-<?php setcookie("isAdmin", Yii::app()->user->isAdmin(), time() + (86400 * 1), "/"); ?>
-<?php if(Yii::app()->params['maintenance'] === true) {
+<?php /* @var $this Controller */ 
+setcookie("isAdmin", Yii::app()->user->isAdmin(), time() + (86400 * 1), "/");
+if(Yii::app()->params['maintenance'] === true) {
     if (Yii::app()->user->isAdmin() || $_COOKIE['isAdmin'] === "1") {
     }
     else {
@@ -103,9 +103,7 @@
     <div id="topbar-first" class="topbar">
         <div class="container">
             <div class="topbar-brand">
-                <a class="navbar-brand hidden-xs"
-                
-                   href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/gassets/PAGE_LOGO2.png"></a>
+                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="img/PAGE_LOGO2.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">
@@ -303,7 +301,7 @@
 
 </script>
 <div class="footer">
-<div class="text text-center animated fadeIn black">Â?<strong>Â© 2015 Profiler - All Rights Reserved</strong><br><div class="footerlinks"><a href="http://Profiler.cf/team"><strong>Team</strong></a> - <a href="http://Profiler.cf/changelog"><strong>Changelog</strong></a></div></div>
+<div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - All Rights Reserved</strong><br><div class="footerlinks"><a href="http://Profiler.cf/team"><strong>Team</strong></a> - <a href="http://Profiler.cf/changelog"><strong>Changelog</strong></a></div></div>
 </div>
 <h5 style="text-align: center;">
 <?php

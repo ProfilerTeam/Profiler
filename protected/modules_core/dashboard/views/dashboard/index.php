@@ -3,7 +3,6 @@
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <strong>Status:</strong> Profiler is currently being revamped! (Version <?php echo Yii::app()->params['version']; ?>)
     </div>
-    <script>console.log("Welcome alert displayed");</script>
     <div class="row">
         <div class="col-md-8">
             <div class="panel panel-default">

@@ -7,7 +7,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
 
 <div class="container" style="text-align: center;">
     <center>
-        <div class="loginLogo" id="loginLogo"><img src="/gassets/LOGIN_LOGO.png" class="animated"></img></div>
+        <div class="loginLogo" id="loginLogo"><img src="../../img/LOGIN_LOGO.png" class="animated"></img></div>
     </center>
 </div>
     <script>
@@ -157,7 +157,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
 </script>
 <style>
 body {
-    background: url(/gassets/LOGIN_BG.jpg) no-repeat;
+    background: url(../../img/LOGIN_BG.jpg) no-repeat;
     background-size: auto;
 }
 </style>

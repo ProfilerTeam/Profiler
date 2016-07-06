@@ -3,9 +3,9 @@
   array (
     'db' => 
     array (
-      'connectionString' => 'mysql:host=localhost;dbname=profiler_test',
-      'username' => 'root',
-      'password' => 'profilerpass',
+      'connectionString' => 'mysql:host=localhost;dbname=profiler',
+      'username' => 'profilertest',
+      'password' => 'profilertest',
     ),
     'cache' => 
     array (
@@ -46,8 +46,8 @@
     array (
       'db' => 
       array (
-        'installer_hostname' => 'YOUR_SQL_HOSTNAME',
-        'installer_database' => 'YOUR_SQL_DATABASE',
+        'installer_hostname' => 'localhost',
+        'installer_database' => 'profiler',
       ),
     ),
     'installed' => true,
