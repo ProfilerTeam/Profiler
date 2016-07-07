@@ -22,7 +22,7 @@ The following requirements need to be met:
  - [PHP EXIF Extension](http://php.net/manual/de/book.exif.php)
  - [PHP cURL Extension](http://php.net/manual/en/curl.setup.php) (php5-curl)
 
-You will need to set up a MySQL database and import the **import.sql** file to set up the database structure and also add a few example users and posts so you can fully test the app.
+I am in the process of creating an **SQL** file that can be imported to your database that will automatically create all the tables needed by Profiler.
 
 Fork the repository and clone that repo and make any changes you wish to make, then submit a Pull Request and we will review it. If we approve it, it goes into our source code and you've successfully contributed, you're awesome!
 
@@ -40,4 +40,4 @@ Then you can create a pull request and your translation will be added into the m
 
 
 - Developers -
-Zak, and Member1221
+Zak and Member1221
