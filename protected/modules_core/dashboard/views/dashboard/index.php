@@ -6,7 +6,9 @@
     <div class="row">
         <div class="col-md-8">
             <div class="panel panel-default">
-                <div class="panel-heading"><?php echo Yii::t('DashboardModule.views_dashboard_index', 'Your Feed'); ?></div>
+                <div class="panel-heading">
+					<?php echo Yii::t('DashboardModule.views_dashboard_index', 'Your Feed'); ?>
+				</div>
             <?php $this->widget('application.modules_core.post.widgets.PostFormWidget', array('contentContainer' => Yii::app()->user->model)); ?>
             <hr>
             <?php

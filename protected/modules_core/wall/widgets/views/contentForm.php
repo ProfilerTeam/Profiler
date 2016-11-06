@@ -1,7 +1,7 @@
 <div class="panel panel-default <?php
-if (Yii::app()->getController()->id == 'dashboard') {
+/*if (Yii::app()->getController()->id == 'dashboard') {
     echo 'hidden';
-}
+}*/
 ?>">
     <div class="panel-body" id="contentFormBody">
 
