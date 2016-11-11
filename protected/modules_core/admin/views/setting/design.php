@@ -24,7 +24,7 @@
 
         <div class="form-group">
             <?php echo $form->labelEx($model, 'displayName'); ?>
-            <?php echo $form->dropDownList($model, 'displayName', array('{username}' => Yii::t('AdminModule.views_setting_design', 'Username (e.g. zak)'), '{profile.firstname} {profile.lastname}' => Yii::t('AdminModule.views_setting_design', 'Firstname Lastname (e.g. John Doe)')), array('class' => 'form-control')); ?>
+            <?php echo $form->dropDownList($model, 'displayName', array('{username}' => Yii::t('AdminModule.views_setting_design', 'Username (e.g. zak)'), '{profile.name}' => Yii::t('AdminModule.views_setting_design', 'Firstname Lastname (e.g. John Doe)')), array('class' => 'form-control')); ?>
         </div>
 
         <div class="form-group">
@@ -42,7 +42,3 @@
 
     </div>
 </div>
-
-
-
-

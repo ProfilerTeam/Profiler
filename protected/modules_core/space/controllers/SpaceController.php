@@ -129,7 +129,7 @@ class SpaceController extends Controller
             $i++;
             $condition .= " AND (u.email LIKE :match{$i} OR "
                 . "u.username LIKE :match{$i} OR "
-                . "p.firstname LIKE :match{$i} OR "
+                . "p.name LIKE :match{$i} OR "
                 . "p.lastname LIKE :match{$i} OR "
                 . "p.title LIKE :match{$i})";
 

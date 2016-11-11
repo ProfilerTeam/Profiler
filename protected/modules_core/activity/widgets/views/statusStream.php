@@ -5,7 +5,7 @@
                 <center>
                                 <br>
                                 <br>
-                                <img src="img/PAGE_LOGO.png">
+                                <img src="/img/PAGE_LOGO.png">
                                 <br>
                                 <span class="label label-success"><strong><?php echo Yii::app()->params['versionFlag']; ?> (Version <?php echo Yii::app()->params['version']; ?>)</strong></span>
                                 <br>
@@ -92,5 +92,3 @@
     })
 
 </script>
-
-

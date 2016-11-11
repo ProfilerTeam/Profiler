@@ -343,9 +343,9 @@ class User extends HActiveRecordContentContainer implements ISearchable
         }
 
         if ($this->isNewRecord){
-            if($this->status == User::STATUS_ENABLED) 
-                $this->setUpApproved();  
-            else 
+            if($this->status == User::STATUS_ENABLED)
+                $this->setUpApproved();
+            else
                 $this->notifyGroupAdminsForApproval();
         }
 
@@ -607,8 +607,8 @@ class User extends HActiveRecordContentContainer implements ISearchable
         $name = '';
         $format = HSetting::Get('displayNameFormat');
 
-        if ($format == '{profile.firstname} {profile.lastname}')
-            $name = CHtml::encode($this->profile->firstname . " " . $this->profile->lastname);
+        if ($format == '{profile.name}')
+            $name = CHtml::encode($this->profile->name . " " . $this->profile->lastname);
 
         // Return always username as fallback
         if ($name == '')

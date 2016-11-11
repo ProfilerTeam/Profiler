@@ -76,7 +76,7 @@ class DashboardController extends Controller {
 
         $criteria = new CDbCriteria();
         //$criteria->condition = 'visibility != '.Space::VISIBILITY_NONE;
-        $criteria->order = 'firstname ASC';
+        $criteria->order = 'name ASC';
 
         $userCount = User::model()->count($criteria);
 

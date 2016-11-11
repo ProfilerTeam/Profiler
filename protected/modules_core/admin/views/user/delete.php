@@ -12,7 +12,7 @@
             'data' => $model,
             'attributes' => array(
                 'username',
-                'firstname',
+                'name',
                 'lastname',
                 'email:email',
                 'created_at',

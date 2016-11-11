@@ -13,9 +13,9 @@
  */
 ?>
 <a href="#" id="<?php echo $id . "-LikeLink"; ?>" class="like likeAnchor"
-   style="<?php if ($currentUserLiked): ?>display:none<?php endif; ?>"><?php echo Yii::t('LikeModule.widgets_views_likeLink', '<span class="label label-primary"><i class="fa fa-heart" style="color: #FFFFFF;"></i> Like</span>'); ?></a>
+   style="<?php if ($currentUserLiked): ?>display:none<?php endif; ?>"><?php echo Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-heart" style="color: #BBBBBB; font-size: 150%;"></i></span>'); ?></a>
 <a href="#" id="<?php echo $id . "-UnlikeLink"; ?>" class="unlike likeAnchor"
-   style="<?php if (!$currentUserLiked): ?>display:none<?php endif; ?>"><?php echo Yii::t('LikeModule.widgets_views_likeLink', '<span class="label label-success"><i class="fa fa-heart" style="color: #FFFFFF;"></i> Unlike</span>'); ?></a>
+   style="<?php if (!$currentUserLiked): ?>display:none<?php endif; ?>"><?php echo Yii::t('LikeModule.widgets_views_likeLink', '<i class="fa fa-heart" style="color: #DD0000; font-size: 150%;"></i></span>'); ?></a>
 
 <?php
 $userlist = ""; // variable for users output
@@ -77,4 +77,3 @@ list($className, $modelId) = explode("_", $id);
 <?php } else { ?>
     <span class="<?php echo $id . "-LikeCount"; ?>"></span>
 <?php } ?>
-

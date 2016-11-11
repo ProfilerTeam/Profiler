@@ -54,5 +54,5 @@
   ),
   'name' => 'Profiler',
   'language' => 'en_gb',
-  'theme' => 'Default',
+  'theme' => 'Metro',
 ); ?>

@@ -54,7 +54,7 @@ $cSocial->save();
 
 // Add Fields
 $field = new ProfileField();
-$field->internal_name = "firstname";
+$field->internal_name = "name";
 $field->title = 'Firstname';
 $field->sort_order = 100;
 $field->profile_field_category_id = $cGeneral->id;

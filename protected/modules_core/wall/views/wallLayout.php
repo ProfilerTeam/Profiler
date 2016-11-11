@@ -31,11 +31,11 @@
         <h4 class="media-heading"><a
                 href="<?php echo $object->content->user->getProfileUrl(); ?>"><?php echo CHtml::encode($object->content->user->displayName); ?></a>
             <small><?php echo $object->content->created_at; ?>
-                
+
                 <?php if ($object->content->created_at != $object->content->updated_at): ?>
                     (<?php echo Yii::t('WallModule.views_wallLayout', 'Updated :timeago', array (':timeago'=>$object->content->updated_at)); ?>)
                 <?php endif; ?>
-                
+
 
                 <!-- show space name -->
                 <?php if (Wall::$currentType != Wall::TYPE_SPACE && $object->content->container instanceof Space): ?>
@@ -44,15 +44,14 @@
 
                 <!-- show labels -->
                 <?php $this->widget('application.modules_core.wall.widgets.WallEntryLabelWidget', array('object' => $object)); ?>
-
+				</small>
             </small>
         </h4>
-        <h5><?php echo CHtml::encode($object->content->user->profile->title); ?></h5>
 
     </div>
-    <hr/>
+	<br>
 
-    <!-- show content -->
+	<!-- show content -->
     <div class="content" id="wall_content_<?php echo $object->getUniqueId(); ?>">
         <?php echo $content; ?>
     </div>
@@ -60,5 +59,3 @@
     <!-- show controls -->
     <?php $this->widget('application.modules_core.wall.widgets.WallEntryAddonWidget', array('object' => $object)); ?>
 </div>
-
-

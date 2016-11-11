@@ -96,7 +96,7 @@ class Zend_Service_Technorati_Author
     {
         $xpath = new DOMXPath($dom->ownerDocument);
 
-        $result = $xpath->query('./firstname/text()', $dom);
+        $result = $xpath->query('./name/text()', $dom);
         if ($result->length == 1) $this->setFirstName($result->item(0)->data);
 
         $result = $xpath->query('./lastname/text()', $dom);

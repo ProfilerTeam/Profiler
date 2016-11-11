@@ -10,7 +10,6 @@
 					<?php echo Yii::t('DashboardModule.views_dashboard_index', 'Your Feed'); ?>
 				</div>
             <?php $this->widget('application.modules_core.post.widgets.PostFormWidget', array('contentContainer' => Yii::app()->user->model)); ?>
-            <hr>
             <?php
             $this->widget('application.modules_core.wall.widgets.WallStreamWidget', array(
                 'type' => Wall::TYPE_DASHBOARD

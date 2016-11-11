@@ -1,10 +1,10 @@
-<?php /* @var $this Controller */ 
+<?php /* @var $this Controller */
 setcookie("isAdmin", Yii::app()->user->isAdmin(), time() + (86400 * 1), "/");
 if(Yii::app()->params['maintenance'] === true) {
     if (Yii::app()->user->isAdmin() || $_COOKIE['isAdmin'] === "1") {
     }
     else {
-        header("Location: http://Profiler.cf/maintenance"); 
+        header("Location: http://Profiler.cf/maintenance");
         die();
     }
 }
@@ -103,7 +103,7 @@ if(Yii::app()->params['maintenance'] === true) {
     <div id="topbar-first" class="topbar">
         <div class="container">
             <div class="topbar-brand">
-                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="img/PAGE_LOGO2.png"></a>
+                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/img/PAGE_LOGO2.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">
@@ -182,16 +182,16 @@ if(Yii::app()->params['maintenance'] === true) {
                 <?php $this->widget('application.widgets.NotificationAddonWidget', array('widgets' => array())); ?>
 
                 <div class="btn-group">
-                    <a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile">
+                    <a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
                         <i class="fa fa-user"></i>
                     </a>
-                    
+
                 <?php if (Yii::app()->user->isAdmin()) : ?>
-                	<a href="<?php echo $this->createUrl('//admin/setting');?>" id="icon-admin">
+                	<a href="<?php echo $this->createUrl('//admin/setting');?>" id="icon-admin" style="font-size: 170%; border-radius: 10%;">
 						<i class="fa fa-cog"></i>
 					</a>
                 <?php endif; ?>
-   
+
             </div>
             </div>
 
@@ -210,7 +210,7 @@ if(Yii::app()->params['maintenance'] === true) {
                 <!-- load navigation from widget -->
                 <?php $this->widget('application.widgets.TopMenuWidget', array()); ?>
             </ul>
-            
+
             <ul class="nav pull-right" id="search-menu-nav">
                 <li class="dropdown">
                     <a href="#" id="search-menu" class="dropdown-toggle" data-toggle="dropdown">

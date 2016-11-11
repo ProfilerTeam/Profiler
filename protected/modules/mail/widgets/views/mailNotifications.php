@@ -1,5 +1,5 @@
 <div class="btn-group">
-    <a href="#" id="icon-messages" class="dropdown-toggle" data-toggle="dropdown"><i
+    <a href="#" id="icon-messages" style="font-size: 170%; border-radius: 10%;" class="dropdown-toggle" data-toggle="dropdown"><i
             class="fa fa-envelope"></i></a>
     <span id="badge-messages" style="display:none;"
           class="label label-danger label-notification">1</span>
@@ -61,4 +61,3 @@
 
     })
 </script>
-

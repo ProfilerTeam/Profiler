@@ -11,7 +11,7 @@ class m140512_141414_i18n_profilefields extends EDbMigration
 
                 $this->update('profile_field', array(
                     'is_system' => 1
-                ), 'internal_name="firstname" OR internal_name="lastname" OR internal_name="title"');
+                ), 'internal_name="name" OR internal_name="lastname" OR internal_name="title"');
                 
     }
 

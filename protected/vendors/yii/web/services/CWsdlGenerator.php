@@ -190,7 +190,7 @@ class CWsdlGenerator extends CComponent
 	/**
 	* @var array List of complex types used by operations.
 	* If an SOAP operation defines complex input or output type, all objects are included here containing all sub-parameters.
-	* For instance, if an SOAP operation "createUser" requires complex input object "User", then the object "User" will be included here with declared subparameters such as "firstname", "lastname", etc..
+	* For instance, if an SOAP operation "createUser" requires complex input object "User", then the object "User" will be included here with declared subparameters such as "name", "lastname", etc..
 	*/
 	protected $types;
 
@@ -641,7 +641,7 @@ class CWsdlGenerator extends CComponent
 	* Each complex data type is described in a separate HTML table containing following columns:
 	* <ul>
 	* <li># - attribute ID</li>
-	* <li>Attribute - attribute name, e.g. firstname</li>
+	* <li>Attribute - attribute name, e.g. name</li>
 	* <li>Type - attribute type, e.g. integer, date, tns:SoapPovCalculationResultArray</li>
 	* <li>Nill - true|false - whether the attribute is nillable</li>
 	* <li>Min - minimum number of occurrences</li>

@@ -82,7 +82,7 @@ class SearchController extends Controller
             $i++;
             $criteria->condition .= " AND (t.email LIKE :match{$i} OR "
                     . "t.username LIKE :match{$i} OR "
-                    . "userProfile.firstname LIKE :match{$i} OR "
+                    . "userprofile.name LIKE :match{$i} OR "
                     . "userProfile.lastname LIKE :match{$i} OR "
                     . "userProfile.title LIKE :match{$i})";
 
