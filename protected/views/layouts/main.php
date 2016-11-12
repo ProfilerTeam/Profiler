@@ -104,7 +104,7 @@ if(Yii::app()->params['maintenance'] === true) {
     <div id="topbar-first" class="topbar">
         <div class="container">
             <div class="topbar-brand">
-                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/img/page_logo.png"></a>
+                <a class="navbar-brand hidden-xs" href="/"><img src="/img/page_logo.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">

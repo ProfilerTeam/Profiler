@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 12, 2016 at 12:32 
+-- Generation Time: Nov 12, 2016 at 12:32
 -- Server version: 10.1.16-MariaDB
 -- PHP Version: 5.6.24
 
@@ -1126,7 +1126,7 @@ INSERT INTO `setting` (`id`, `name`, `value`, `value_text`, `module_id`, `create
 (4, 'name', 'Profiler', NULL, NULL, '2015-03-02 23:30:15', 0, '2015-05-05 18:21:45', 18),
 (5, 'baseUrl', 'http://profiler.cf', NULL, NULL, '2015-03-02 23:30:16', 0, '2015-05-05 18:21:47', 18),
 (6, 'paginationSize', '10', NULL, NULL, '2015-03-02 23:30:16', 0, '2016-11-06 06:31:15', 34),
-(7, 'displayNameFormat', '{profile.firstname} {profile.lastname}', NULL, NULL, '2015-03-02 23:30:16', 0, '2016-11-06 06:31:15', 34),
+(7, 'displayNameFormat', '{name}', NULL, NULL, '2015-03-02 23:30:16', 0, '2016-11-06 06:31:15', 34),
 (8, 'authInternal', '1', NULL, 'authentication', '2015-03-02 23:30:16', 0, '2015-03-02 23:30:16', 0),
 (9, 'authLdap', '0', NULL, 'authentication', '2015-03-02 23:30:17', 0, '2015-03-02 23:30:17', 0),
 (10, 'refreshUsers', '1', NULL, 'authentication_ldap', '2015-03-02 23:30:17', 0, '2015-03-02 23:30:17', 0),
