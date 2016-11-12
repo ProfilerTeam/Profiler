@@ -99,9 +99,9 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
             <?php $this->endWidget(); ?>
                 -->
         </div>
-    
+
     </div>
-    
+
     <?php if ($canRegister) : ?>
         <div id="register-form" class="panel panel-default animated bounceInLeft"
              style="max-width: 300px; margin: 0 auto 20px; text-align: left;">
@@ -157,8 +157,7 @@ $this->pageTitle = Yii::t('UserModule.views_auth_login', '<strong>Please</strong
 </script>
 <style>
 body {
-    background: url(../../img/LOGIN_BG.jpg) no-repeat;
+    background: url(../../img/page-loader.png) no-repeat;
     background-size: auto;
 }
 </style>
-
