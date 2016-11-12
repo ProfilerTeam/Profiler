@@ -59,6 +59,7 @@ class AccountLoginForm extends CFormModel
                 } elseif ($this->_identity->errorCode === UserIdentity::ERROR_SUSPENDED) {
                     $this->addError('username', Yii::t('UserModule.forms_AccountLoginForm', 'Your account is suspended.'));
                 } else {
+					$this->addError('username', Yii::t('UserModule.forms_AccountLoginForm', ''));
                     $this->addError('password', Yii::t('UserModule.forms_AccountLoginForm', 'Incorrect username/email or password.'));
                 }
         }
@@ -71,7 +72,7 @@ class AccountLoginForm extends CFormModel
     public function login()
     {
 		// Checks whether the user has put anything into the uname/pword fields.
-		
+
         if ($this->_identity === null) {
             $this->_identity = new UserIdentity($this->username, $this->password);
             $this->_identity->authenticate();
