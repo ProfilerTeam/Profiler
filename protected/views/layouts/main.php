@@ -277,16 +277,6 @@ if(Yii::app()->params['maintenance'] === true) {
 <div class="footer">
 <div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - MIT Licensed</strong><br><div class="footerlinks"><a href="https://github.com/ProfilerTeam"><strong>Team</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/commits/master"><strong>Commits</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/issues/new"><strong>Report an issue</strong></a></div></div>
 </div>
-<h5 style="text-align: center;">
-<?php
-if(isset($_COOKIE['lang_cookie'])) {
-	echo $_COOKIE['lang_cookie'];
-}
-else {
-	echo 'Language cookie not set.';
-}
-?>
-</h5>
 </div>
 <?php echo HSetting::GetText('trackingHtmlCode'); ?>
 </body>
