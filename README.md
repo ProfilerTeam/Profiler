@@ -24,6 +24,7 @@ The following requirements need to be met:
 
 ~~I am in the process of creating an **SQL** file that can be imported to your database that will automatically create all the tables needed by Profiler.~~
 There's an example file now, called profiler.sql. Load that into your db.
+The default user for the example file is called "root" and its password is "password".
 
 Fork the repository and clone that repo and make any changes you wish to make, then submit a Pull Request and we will review it. If we approve it, it goes into our source code and you've successfully contributed, you're awesome!
 
