@@ -16,7 +16,6 @@ class DashboardModule extends HWebModule
      */
     public function init()
     {
-
         $this->setImport(array(
         ));
     }
@@ -35,7 +34,7 @@ class DashboardModule extends HWebModule
             'label' => Yii::t('DashboardModule.base', 'Dashboard'),
             'id' => 'dashboard',
             'icon' => '<i class="fa fa-tachometer"></i>',
-            'url' => Yii::app()->createUrl('//dashboard/dashboard'),
+            'url' => 'dashboard/dashboard',
             'sortOrder' => 100,
             'isActive' => (Yii::app()->controller->module && Yii::app()->controller->module->id == 'dashboard'),
         ));

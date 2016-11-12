@@ -6,8 +6,9 @@ Yii::app()->moduleManager->register(array(
     'isCoreModule' => true,
     'import' => array(
         'application.modules_core.dashboard.*',
+		'application.modules_core.dashboard.components.*',
     ),
-    // Events to Catch 
+    // Events to Catch
     'events' => array(
         array('class' => 'TopMenuWidget', 'event' => 'onInit', 'callback' => array('DashboardModule', 'onTopMenuInit')),
     ),

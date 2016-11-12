@@ -10,7 +10,7 @@ class SiteController extends Controller {
      */
     public function actionIndex() {
 
-        $this->redirect(array('dashboard/dashboard'));
+        //$this->redirect('/');
     }
 
     /**

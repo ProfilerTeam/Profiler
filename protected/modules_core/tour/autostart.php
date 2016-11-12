@@ -1,5 +1,5 @@
 <?php
-
+/*
 Yii::app()->moduleManager->register(array(
     'id' => 'tour',
     'class' => 'application.modules_core.tour.TourModule',
@@ -11,5 +11,5 @@ Yii::app()->moduleManager->register(array(
     'events' => array(
         array('class' => 'DashboardSidebarWidget', 'event' => 'onInit', 'callback' => array('TourModule', 'onDashboardSidebarInit')),
     ),
-));
+));*/
 ?>

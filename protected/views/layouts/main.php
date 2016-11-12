@@ -125,9 +125,9 @@ if(Yii::app()->params['maintenance'] === true) {
                         </a>
                         <ul class="dropdown-menu pull-right">
                             <li>
-                                <a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid)); ?>" style="color: #000000;"><i
+                                <a href="<?php echo Yii::app()->baseUrl . "/" . UserUrlRule::getUserNameByGuid(Yii::app()->user->guid); ?>" style="color: #000000;"><i
                                         class="fa fa-user"></i> <?php echo Yii::t('base', 'Profile'); ?>
-                                </a>
+                                </a>-->
                             </li>
                             <li>
                                 <a href="<?php echo $this->createUrl('//user/account/edit') ?>" style="color: #000000;"><i
@@ -176,7 +176,7 @@ if(Yii::app()->params['maintenance'] === true) {
 
             	<div class="notifications pull-right">
 					<div class="btn-group">
-                    	<a class="topbar-buttons-bg" href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
+                    	<a class="topbar-buttons-bg" href="<?php echo Yii::app()->baseUrl . "/" . UserUrlRule::getUserNameByGuid(Yii::app()->user->guid); ?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
                         	<i class="fa fa-user"><div id="topbar-buttons"> Profile</div></i>
                     	</a>
 
@@ -198,7 +198,7 @@ if(Yii::app()->params['maintenance'] === true) {
     <!-- end: first top navigation bar -->
     <br>
 
-    
+
     </div>
     <style>
     #search-bar {

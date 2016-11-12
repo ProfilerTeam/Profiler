@@ -4,8 +4,8 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Stores user model to not repeat the database query
-     * 
-     * @var User 
+     *
+     * @var User
      */
     private $_model;
     public $id;
@@ -18,13 +18,13 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
         $this->_model = null;
         $this->id = $id;
     }
-    
+
 
     /**
      * Returns the users displayname
-     * 
+     *
      * Access it by Yii::app()->user->displayname
-     * 
+     *
      * @return String
      */
     function getDisplayName() {
@@ -34,7 +34,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Returns the users e-mail address
-     * 
+     *
      * @return String
      */
     function getEmail() {
@@ -44,7 +44,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Returns the language code of the user model
-     * 
+     *
      * @return String
      */
     function getLanguage() {
@@ -54,7 +54,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Returns users guid
-     * 
+     *
      * @return String
      */
     function getGuid() {
@@ -64,7 +64,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Returns users authentication mode
-     * 
+     *
      * @return String
      */
     function getAuthMode() {
@@ -74,7 +74,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Returns current user model
-     * 
+     *
      * @return type
      * @throws CHttpException
      */
@@ -96,9 +96,9 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Checks if the user is admin
-     * 
+     *
      * Access it by Yii::app()->user->isAdmin()
-     * 
+     *
      * @return int
      */
     function isAdmin() {
@@ -113,7 +113,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
 
     /**
      * Loads user model and store/cache it as class attribute
-     * 
+     *
      * @param Int $id
      * @return User
      */
@@ -141,7 +141,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
     function getName() {
         return $this->getDisplayName();
     }
-    
+
     public function loginRequired() {
         return false;
     }
@@ -149,7 +149,7 @@ class ConsoleUser extends CApplicationComponent implements IWebUser {
     function getAuthTimeout() {
     	return HSetting::Get('defaultUserIdleTimeoutSec', 'authentication_internal');
     }
-    
+
     function setAuthTimeout() {
     	return true;
     }

@@ -28,7 +28,7 @@ return array(
                     'connectionId' => 'db',
                 ),
                 '/' => '//',
-                'dashboard' => 'dashboard/dashboard',
+                '/' => 'dashboard/dashboard',
                 'directory/members' => 'directory/directory/members',
                 'directory/spaces' => 'directory/directory/groups',
                 '<controller:\w+>/<id:\d+>' => '<controller>/view',
