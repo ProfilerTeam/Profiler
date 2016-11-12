@@ -176,7 +176,7 @@ if(Yii::app()->params['maintenance'] === true) {
 
             	<div class="notifications pull-right">
 					<div class="btn-group">
-                    	<a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
+                    	<a class="topbar-buttons-bg" href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
                         	<i class="fa fa-user"><div id="topbar-buttons"> Profile</div></i>
                     	</a>
 
@@ -298,7 +298,7 @@ if(Yii::app()->params['maintenance'] === true) {
 
 </script>
 <div class="footer">
-<div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - All Rights Reserved</strong><br><div class="footerlinks"><a href="http://Profiler.cf/team"><strong>Team</strong></a> - <a href="http://Profiler.cf/changelog"><strong>Changelog</strong></a></div></div>
+<div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - MIT Licensed</strong><br><div class="footerlinks"><a href="https://github.com/ProfilerTeam"><strong>Team</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/commits/master"><strong>Commits</strong></a></div></div>
 </div>
 <h5 style="text-align: center;">
 <?php
