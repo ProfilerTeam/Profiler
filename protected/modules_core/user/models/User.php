@@ -607,8 +607,8 @@ class User extends HActiveRecordContentContainer implements ISearchable
         $name = '';
         $format = HSetting::Get('displayNameFormat');
 
-        if ($format == '{profile.name}')
-            $name = CHtml::encode($this->profile->name . " " . $this->profile->lastname);
+        if ($format == '{name}')
+            $name = CHtml::encode($this->profile->name);
 
         // Return always username as fallback
         if ($name == '')
