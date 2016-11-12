@@ -17,6 +17,14 @@
     </script>
 <?php endif; ?>
 
+<?php if ($this->user->profile->backgroundimage !== "") : ?>
+    <style>
+        body {
+            background-image: url(<?php echo $this->user->profile->backgroundimage; ?>) !important;
+        }
+    </style>
+<?php endif; ?>
+
 <div class="container">
 
     <div class="row">
