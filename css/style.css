@@ -63,6 +63,16 @@ textarea {
   font-size: 12px;
   font-weight: normal;
 }
+
+#topbar-buttons {
+	display:inline;
+	position:relative;
+	transform: translateY(-50%);
+	top: -3px;
+	font-size: 60%;
+	font-family: arial;
+}
+
 #topbar-first {
   top: 0;
   background-color: #101010;

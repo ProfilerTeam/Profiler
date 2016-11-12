@@ -1,6 +1,6 @@
 <div class="btn-group">
     <a href="#" id="icon-notifications" style="font-size: 170%; border-radius: 10%;" data-toggle="dropdown">
-        <i class="fa fa-bell"></i>
+        <i class="fa fa-bell"><div id="topbar-buttons"> Notifications</div></i>
     </a>
     <span id="badge-notifications" style="display:none;" class="label label-danger label-notifications">1</span>
 

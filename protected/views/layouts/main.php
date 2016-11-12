@@ -32,6 +32,7 @@ if(Yii::app()->params['maintenance'] === true) {
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/bootstrap-wysihtml5.css?ver=<?php echo $ver; ?>" rel="stylesheet">
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/flatelements.css?ver=<?php echo $ver; ?>" rel="stylesheet">
     <link href="<?php echo Yii::app()->baseUrl; ?>/css/jquery.hashtags.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
     <!-- end: CSS -->
 
 
@@ -173,29 +174,25 @@ if(Yii::app()->params['maintenance'] === true) {
 
             </div>
 
-            <div class="notifications pull-right">
+            	<div class="notifications pull-right">
+					<div class="btn-group">
+                    	<a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
+                        	<i class="fa fa-user"><div id="topbar-buttons"> Profile</div></i>
+                    	</a>
 
-                <!-- global notifications dropdown -->
-                <?php $this->widget('application.modules_core.notification.widgets.NotificationListWidget'); ?>
+            		</div>
 
-                <!-- Notification addon widget for modules -->
-                <?php $this->widget('application.widgets.NotificationAddonWidget', array('widgets' => array())); ?>
 
-                <div class="btn-group">
-                    <a href="<?php echo $this->createUrl('//user/profile', array('uguid' => Yii::app()->user->guid));?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
-                        <i class="fa fa-user"></i>
-                    </a>
+                	<!-- global notifications dropdown -->
+                	<?php $this->widget('application.modules_core.notification.widgets.NotificationListWidget'); ?>
 
-                <?php if (Yii::app()->user->isAdmin()) : ?>
-                	<a href="<?php echo $this->createUrl('//admin/setting');?>" id="icon-admin" style="font-size: 170%; border-radius: 10%;">
-						<i class="fa fa-cog"></i>
-					</a>
-                <?php endif; ?>
+					<!-- Notification addon widget for modules -->
+					<?php $this->widget('application.widgets.NotificationAddonWidget', array('widgets' => array())); ?>
 
-            </div>
-            </div>
 
+            	</div>
         </div>
+
 
     </div>
     <!-- end: first top navigation bar -->
