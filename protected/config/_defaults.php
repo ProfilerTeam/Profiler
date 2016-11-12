@@ -104,8 +104,8 @@ return array(
     // using Yii::app()->params['paramName']
     'params' => array(
         // Installed Flag
-        'version' => '0.9.2',
-        'versionFlag' => 'Beta Revamp Stage 1',
+        'version' => '0.9.4',
+        'versionFlag' => 'Beta Revamp',
         'statusShown' => true,
         'maintenance' => false,
         'installed' => false,

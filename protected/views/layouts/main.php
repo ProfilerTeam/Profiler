@@ -104,7 +104,7 @@ if(Yii::app()->params['maintenance'] === true) {
     <div id="topbar-first" class="topbar">
         <div class="container">
             <div class="topbar-brand">
-                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/img/PAGE_LOGO2.png"></a>
+                <a class="navbar-brand hidden-xs" href="<?php echo Yii::app()->createUrl('//'); ?>"><img src="/img/page_logo.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">
@@ -142,8 +142,8 @@ if(Yii::app()->params['maintenance'] === true) {
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="http://Profiler.cf/status" style="color: #000000;"><i
-                                            class="fa fa-hdd-o"></i> <?php echo Yii::t('base', 'Server Status'); ?>
+                                    <a href="https://github.com/ProfilerTeam/Profiler/issues" style="color: #000000;"><i
+                                            class="fa fa-hdd-o"></i> <?php echo Yii::t('base', 'Profiler Issues'); ?>
                                     </a>
                                 </li>
                             <?php endif; ?>
@@ -298,7 +298,7 @@ if(Yii::app()->params['maintenance'] === true) {
 
 </script>
 <div class="footer">
-<div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - MIT Licensed</strong><br><div class="footerlinks"><a href="https://github.com/ProfilerTeam"><strong>Team</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/commits/master"><strong>Commits</strong></a></div></div>
+<div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - MIT Licensed</strong><br><div class="footerlinks"><a href="https://github.com/ProfilerTeam"><strong>Team</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/commits/master"><strong>Commits</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/issues/new"><strong>Report an issue</strong></a></div></div>
 </div>
 <h5 style="text-align: center;">
 <?php
