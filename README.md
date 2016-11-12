@@ -3,6 +3,8 @@ The Profiler Project ![Travis Build Status](https://travis-ci.org/ProfilerTeam/P
 
 The **Profiler** project is an open-source social networking project built in PHP. It uses the Yii and Zend frameworks and multiple JS libraries such as JQuery and AtWho.
 
+![Profiler](https://pbs.twimg.com/media/CxBKvvWXEAEo6me.jpg)
+_An screencap of Profiler._
 ----------
 
 
