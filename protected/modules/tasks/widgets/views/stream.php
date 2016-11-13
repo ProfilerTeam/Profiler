@@ -1,4 +1,4 @@
-<ul class="nav nav-tabs wallFilterPanel" id="filter" style="display: none;">
+<ul class="nav nav-tabs wallFilterPanel" id="filter" style="display: none; background-color: #ffffff; margin-bottom: 0px;">
     <li class=" dropdown"> <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo Yii::t('TasksModule.widgets_views_stream', 'Filter'); ?> <b class="caret"></b></a>
         <ul class="dropdown-menu">
             <li><a href="#" class="wallFilter" id="filter_tasks_meAssigned"><i class="fa fa-square-o"></i> <?php echo Yii::t('TasksModule.widgets_views_stream', 'Assigned to me'); ?></a></li>
@@ -65,5 +65,3 @@
     currentStream = s;
 
 </script>
-
-

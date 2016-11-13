@@ -1,5 +1,5 @@
 <div class="btn-group">
-    <a href="#" class="topbar-buttons-bg" id="icon-notifications" style="font-size: 170%; border-radius: 10%;" data-toggle="dropdown">
+    <a href="#" class="topbar-buttons-bg pbutts" id="icon-notifications" style="font-size: 170%; border-radius: 10%;" data-toggle="dropdown">
         <i class="fa fa-bell"><div id="topbar-buttons"> Notifications</div></i>
     </a>
     <span id="badge-notifications" style="display:none;" class="label label-danger label-notifications">1</span>

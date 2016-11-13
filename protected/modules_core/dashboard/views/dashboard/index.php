@@ -5,11 +5,11 @@
     </div>
     <div class="row">
         <div class="col-md-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
+            <div class="pdashboardround panel-default">
+                <div class="pdashboardround panel-heading">
 					<?php echo Yii::t('DashboardModule.views_dashboard_index', 'Your Feed'); ?>
 				</div>
-            <?php $this->widget('application.modules_core.post.widgets.PostFormWidget', array('contentContainer' => Yii::app()->user->model)); ?>
+            	<?php $this->widget('application.modules_core.post.widgets.PostFormWidget', array('contentContainer' => Yii::app()->user->model)); ?>
             <?php
             $this->widget('application.modules_core.wall.widgets.WallStreamWidget', array(
                 'type' => Wall::TYPE_DASHBOARD

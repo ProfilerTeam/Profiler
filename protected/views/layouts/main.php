@@ -104,13 +104,13 @@ if(Yii::app()->params['maintenance'] === true) {
     <div id="topbar-first" class="topbar">
         <div class="container">
             <div class="topbar-brand">
-                <a class="navbar-brand hidden-xs" href="/"><img src="/img/page_logo.png"></a>
+                <a class="navbar-brand hidden-xs plogo" href="/"><img src="/img/page_logo.png"></a>
             </div>
 
             <div class="topbar-actions pull-right">
 
                 <ul class="nav">
-                    <li class="dropdown account">
+                    <li class="dropdown account pbutts">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <div class="user-title pull-left hidden-xs">
                                 <strong><?php echo CHtml::encode(Yii::app()->user->displayName); ?></strong><br/><span class="truncate"><?php echo CHtml::encode(Yii::app()->user->getModel()->profile->title); ?></span>
@@ -175,21 +175,19 @@ if(Yii::app()->params['maintenance'] === true) {
             </div>
 
             	<div class="notifications pull-right">
-					<div class="btn-group">
-                    	<a class="topbar-buttons-bg" href="<?php echo Yii::app()->baseUrl . "/" . UserUrlRule::getUserNameByGuid(Yii::app()->user->guid); ?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
-                        	<i class="fa fa-user"><div id="topbar-buttons"> Profile</div></i>
-                    	</a>
+						<div class="btn-group pbutts">
+                    		<a class="topbar-buttons-bg" href="<?php echo Yii::app()->baseUrl . "/" . UserUrlRule::getUserNameByGuid(Yii::app()->user->guid); ?>" id="icon-profile" style="font-size: 170%; border-radius: 10%;">
+                        		<i class="fa fa-user"><div id="topbar-buttons"> Profile</div></i>
+                    		</a>
 
-            		</div>
-
-
-                	<!-- global notifications dropdown -->
-                	<?php $this->widget('application.modules_core.notification.widgets.NotificationListWidget'); ?>
-
-					<!-- Notification addon widget for modules -->
-					<?php $this->widget('application.widgets.NotificationAddonWidget', array('widgets' => array())); ?>
+            			</div>
 
 
+                		<!-- global notifications dropdown -->
+                		<?php $this->widget('application.modules_core.notification.widgets.NotificationListWidget'); ?>
+
+						<!-- Notification addon widget for modules -->
+						<?php $this->widget('application.widgets.NotificationAddonWidget', array('widgets' => array())); ?>
             	</div>
         </div>
 

@@ -10,7 +10,7 @@
  */
 ?>
 
-<div class="panel panel-default">
+<div class="panel-default">
     <?php if (!$group->isNewRecord) : ?>
         <div class="panel-heading"><?php echo Yii::t('AdminModule.views_group_edit', '<strong>Edit</strong> group'); ?></div>
     <?php else: ?>

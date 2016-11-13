@@ -11,7 +11,7 @@
  */
 ?>
 <?php if (Yii::app()->getController()->id != 'dashboard') {  ?>
-<ul class="nav nav-tabs wallFilterPanel" id="filter" style="display: none;">
+<ul class="nav nav-tabs wallFilterPanel ppost" id="filter" style="display: none; margin-bottom: 0px;">
     <li class=" dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><?php echo Yii::t('WallModule.widgets_views_stream', 'Filter'); ?> <b
                 class="caret"></b></a>
@@ -87,7 +87,7 @@
                         <?php echo Yii::t('WallModule.widgets_views_stream', '<b>Your profile stream is still empty</b><br>Get started and post something...'); ?>
                     </div>
                 <?php } else { ?>
-                    <div class="panel panel-default">
+                    <div class="panel-default">
                         <div class="panel-body">
                         <?php echo Yii::t('WallModule.widgets_views_stream', '<b>This profile stream is still empty</b>'); ?>
                         </div>
@@ -167,5 +167,3 @@
     })
 
 </script>
-
-

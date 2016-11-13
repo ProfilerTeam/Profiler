@@ -10,7 +10,7 @@
  * @since 0.5
  */
 ?>
-<div class="panel panel-default post" id="post-<?php echo $post->id; ?>">
+<div class="panel-default post ppost" id="post-<?php echo $post->id; ?>">
     <div class="panel-body">
         <?php $this->beginContent('application.modules_core.wall.views.wallLayout', array('object' => $post)); ?>
         <span id="post-content-<?php echo $post->id; ?>" style="overflow: hidden; margin-bottom: 5px;">

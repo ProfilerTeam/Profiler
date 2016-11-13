@@ -402,13 +402,13 @@ table td a:hover {
   text-align: right;
 }
 #topbar-first .account .user-title span {
-  color: #d7d7d7;
+  /*color: #d7d7d7;*/
 }
 #topbar-first .dropdown.account > a,
 #topbar-first .dropdown.account.open > a,
 #topbar-first .dropdown.account > a:hover,
 #topbar-first .dropdown.account.open > a:hover {
-  background-color: #70B8FF;
+  background-color: transparent;
 }
 #topbar-second {
   background-color: #ffffff;

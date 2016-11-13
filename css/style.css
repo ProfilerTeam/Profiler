@@ -1,6 +1,6 @@
 body {
   padding-top: 130px;
-  background-color: #f4f4f4;
+  background-color: #d9d9d9;
 }
 a:hover {
   text-decoration: none;
@@ -26,6 +26,48 @@ hr {
 textarea {
   height: 1.5em;
 }
+.plogo {
+	position: relative;
+	top: 0%;
+	transform: translateY(-15%);
+}
+.pbutts {
+	position: relative;
+	top: 0%;
+	transform: translateY(-5%);
+}
+.pfpost {
+	border-top-width: 1px;
+	border-top-style: solid;
+}
+
+.pdashboardround {
+	border-radius: 10px;
+	background-color: #FFFFFF !important;
+	border-bottom-style: solid !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+.pafterround {
+	border-radius: 10px;
+	border-style: solid;;
+	border-width: thick;
+	border-color: #FFFFFF;
+	border-bottom-style: none !important;
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+.ppost {
+	background-color: #ffffff;
+	margin-bottom: 0px !important;
+	margin-top: 0px !important;
+	border-style: none !important;
+	border-bottom-width: 1px !important;
+	border-bottom-style: solid !important;
+}
+
 .topbar {
   position: fixed;
   display: block;
@@ -287,7 +329,7 @@ textarea {
 .panel.groups .panel-body a img,
 .panel.follower .panel-body a img,
 .panel.spaces .panel-body a img {
-  margin-bottom: 5px;
+  /*margin-bottom: 5px;*/
 }
 .panel-profile .panel-profile-header {
   position: relative;
@@ -328,7 +370,7 @@ textarea {
 .panel-profile .panel-profile-header .img-profile-data h1 {
   font-size: 30px;
   font-weight: 100;
-  margin-bottom: 7px;
+  /*margin-bottom: 7px;*/
   color: #fff;
 }
 .panel-profile .panel-profile-header .img-profile-data h2 {

@@ -1,4 +1,4 @@
-<div class="panel panel-default <?php
+<div class="ppost panel-default <?php
 /*if (Yii::app()->getController()->id == 'dashboard') {
     echo 'hidden';
 }*/
@@ -119,7 +119,7 @@
                     $('#fileUploaderButton_contentFormFiles').bind('fileuploaddone', function (e, data) {
                         $('.btn_container').show();
                     });
-                    
+
                     $('#fileUploaderButton_contentFormFiles').bind('fileuploadprogressall', function (e, data) {
                         var progress = parseInt(data.loaded / data.total * 100, 10);
                         if (progress != 100) {

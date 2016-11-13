@@ -21,6 +21,8 @@
     <style>
         body {
             background-image: url(<?php echo $this->user->profile->backgroundimage; ?>) !important;
+			background-repeat: no-repeat;
+			background-size: cover;
         }
     </style>
 <?php endif; ?>
@@ -35,9 +37,13 @@
                 <div class="profile-nav-container col-md-3">
                     <?php $this->widget('application.modules_core.user.widgets.ProfileMenuWidget', array()); ?>
                 </div>
+				<div>
                 <div class="col-md-9">
-                    <?php echo $content; ?>
+					<div class="pafterround">
+                    	<?php echo $content; ?>
+					</div>
                 </div>
+			</div>
             </div>
         </div>
 </div>
