@@ -64,7 +64,7 @@
 <div id="wallStream">
 
     <!-- DIV for an normal wall stream -->
-    <div class="s2_stream" style="display:none">
+    <div class="s2_stream" style="display:none; background-color: white !important;">
 
         <div class="s2_streamContent"></div>
         <div class="loader streamLoader"></div>
@@ -98,9 +98,12 @@
                 <?php if ($this->contentContainer->canWrite()) { ?>
                 <div class="placeholder placeholder-empty-stream">
                     <?php echo Yii::t('WallModule.widgets_views_stream', '<b>This group is still empty!</b><br>Start by posting something here...'); ?>
+
                 </div>
             <?php }?>
             <?php endif; ?>
+			<br>
+			<br>
         </div>
 
         <div class="emptyFilterStreamMessage">
@@ -124,7 +127,6 @@
         <div class="test"></div>
     </div>
 </div>
-
 <!-- show "Load More" button on mobile devices -->
 <div class="col-md-12 text-center visible-xs visible-sm">
     <button id="btn-load-more" class="btn btn-primary btn-lg ">Load more</button>

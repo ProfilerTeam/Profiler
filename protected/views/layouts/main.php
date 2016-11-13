@@ -272,6 +272,8 @@ if(Yii::app()->params['maintenance'] === true) {
     })
 
 </script>
+<br>
+<br>
 <div class="footer">
 <div class="text text-center animated fadeIn black"><strong>© 2016 Profiler - MIT Licensed</strong><br><div class="footerlinks"><a href="https://github.com/ProfilerTeam"><strong>Team</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/commits/master"><strong>Commits</strong></a> - <a href="https://github.com/ProfilerTeam/Profiler/issues/new"><strong>Report an issue</strong></a></div></div>
 </div>
