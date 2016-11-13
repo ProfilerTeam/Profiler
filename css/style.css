@@ -115,6 +115,8 @@ textarea {
   z-index: 3;
 }
 #topbar-first .notifications {
+  background: #60abf8; /* Old browsers */
+  background: linear-gradient(to bottom, #0276d6 0%,#60abf8 85%,#7abcff 98%);
   position: absolute;
   left: 0;
   right: 0;
