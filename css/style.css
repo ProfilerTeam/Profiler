@@ -26,16 +26,39 @@ hr {
 textarea {
   height: 1.5em;
 }
+
+.btn {
+	border-radius: 10px !important;
+	border-width: 0;
+	border-color: transparent;
+	padding: 10px 15px;
+	background-color: #60abf8;
+}
+
 .plogo {
 	position: relative;
 	top: 0%;
 	transform: translateY(-15%);
 }
-.pbutts {
+
+.paccp {
 	position: relative;
 	top: 0%;
 	transform: translateY(-5%);
 }
+
+.pnotfm {
+	position: relative;
+	top: 0%;
+	transform: translateY(-14%);
+}
+
+.pbutts {
+	position: relative;
+	top: 0%;
+	transform: translateY(-8%);
+}
+
 .pfpost {
 	border-top-width: 1px;
 	border-top-style: solid;

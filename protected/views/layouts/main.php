@@ -110,7 +110,7 @@ if(Yii::app()->params['maintenance'] === true) {
             <div class="topbar-actions pull-right">
 
                 <ul class="nav">
-                    <li class="dropdown account pbutts">
+                    <li class="dropdown account paccp">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                             <div class="user-title pull-left hidden-xs">
                                 <strong><?php echo CHtml::encode(Yii::app()->user->displayName); ?></strong><br/><span class="truncate"><?php echo CHtml::encode(Yii::app()->user->getModel()->profile->title); ?></span>
